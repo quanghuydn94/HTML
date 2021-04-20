@@ -1,0 +1,45 @@
+.Card__Image--bground1 {
+  height: 200px;
+  background-image: url(./image/pt1.jpg);
+  background-size: cover;
+  background-position: right;
+}
+
+.Card__Image--bground2 {
+  height: 200px;
+  background-image: url(./image/pt2.jpg);
+  background-size: cover;
+}
+
+.Card__Image--height1 {
+  height: 130px;
+  background-image: url(./image/man3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Card__Image--height2 {
+  height: 130px;
+  background-image: url(./image/pt2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Card__Image--height3 {
+  height: 130px;
+  background-image: url(./image/son.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Logo {
+  width: 50%;
+  height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .Card__Image--bground1, .Card__Image--bground2, .ListGroup--fontSize, .Card__Content--fontSize {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

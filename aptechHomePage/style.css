@@ -1,0 +1,29 @@
+body {
+  padding: 0 5%;
+}
+
+.carousel-indicators {
+  color: red !important;
+}
+
+.ImageBGround {
+  height: 400px;
+  background-image: url("./image/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: none;
+}
+
+.ImageBGround--Font-family {
+  font-family: 'Courgette', cursive;
+  color: orangered;
+}
+
+.ImageBGround--Font-size1 {
+  font-size: 3rem;
+}
+
+.ImageBGround--Font-size2 {
+  font-size: 4rem;
+}
+/*# sourceMappingURL=style.css.map */

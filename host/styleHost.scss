@@ -1,0 +1,429 @@
+//Hostpage CSS
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+     
+   
+}
+
+.Logo--Size{
+    font-size: 40px;
+}
+
+//header
+.Heading_Font{
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+}
+.Header{
+    background: url(./imageHostpage/bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    &__Content{         
+        padding: 0  5%;
+
+        h1{
+        font-size: 45px;
+        font-family: 'Poppins', sans-serif;
+        }
+
+        select, input {
+        background: transparent;
+        color: white;
+        border: none;
+        }
+
+        option{
+        color: black;
+        font-size: 1rem;
+        }
+        &--Animation{
+            animation: content 2s;
+            position: absolute;
+        }
+    }
+    &__Content--Color{
+        color: #F73967;
+    }
+    &__Button--Color{
+        font-size: 18px;
+        height: 60px;
+        width: 180px;
+        border: none;
+        background: linear-gradient(90deg,#E61E4F,#D80765);
+        border-radius: 10px;
+        
+    }
+   
+}
+.Button__Position{
+    position: relative;
+    top: 40vh;
+
+    #Show{
+        text-decoration:underline;
+        background-color: transparent;
+        border: none;
+    }
+}
+// Pop-up - How we estimate your earning potentail
+.PopUp {
+    position: absolute;
+    padding: 2%;
+    width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #FEFEFE;
+    z-index: 2;
+    opacity: 0.2;
+    display: none;
+    animation: popUp 1s;
+    transition: 1s ease-out;
+}
+
+@keyframes popUp {
+    from {
+        background-color: whie;
+        opacity: 0.2;
+    }
+
+    to {
+        background-color: #FEFEFE;
+        opacity: 1;
+    }
+}
+
+.Container__PopUp {
+    display: none;
+    top: 0;
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.2;
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
+//animation Header__Content
+@keyframes content{
+    from{
+        padding-top: 40px;
+        opacity: 0.2;
+    }
+    to{
+        padding-top: 0px;
+        opacity: 1;
+    }
+}
+
+//Main content
+.Main{
+    margin: 5% 0;
+    padding:0 5%;
+    &__H2--Font{
+        font-size: 2.8rem;
+    }
+    &__H2--Font span{
+        font-family: 'Dancing Script', cursive;
+        font-size: 3rem;
+    }
+    &__Image{
+        &--Url1, &--Url2, &--Url3, &--Url4{
+            background-size: cover;
+            background: no-repeat center;
+            height: 500px;
+            width: 50vw;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+        &--Url1{
+            background-image: url(./imageHostpage/Carousel1.jpg);
+
+        }
+        &--Url2{
+            background-image: url(./imageHostpage/Carousel2.jpg);
+            
+        }
+        &--Url3{
+            background-image: url(./imageHostpage/Carousel3.jpg);
+            
+        }
+        &--Url4{
+            background-image: url(./imageHostpage/Carousel4.jpg);
+            
+        }
+    }
+    &__Content{
+        &--Border{
+            width: 50vw;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: #F7F7F7;
+        }
+    }
+
+    //Button carousel 1
+    &__IconPrev{
+        &--Size{
+            padding:4px 6px;
+            border-radius: 50%;
+            background-color: white;
+            color:black;
+            box-shadow: 0px 1px 1px 1px #E7EAED;
+            position: absolute;
+            top: 45%;
+            left: -1%;
+        }
+    }
+    &__IconNext{
+        &--Size{
+            padding:4px 6px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            box-shadow: 0px 1px 2px 1px #E7EAED;
+            position: absolute;
+            top: 45%;
+            right: -1%;
+        }
+    }
+    &__IconLi li{
+        background-color: black;
+        padding:2px 2.5px;
+        border-radius: 50%;
+        width: 2px;
+    }
+    &__IconLi {
+        bottom: -10%;;
+    }
+    
+}
+.Image--Background{
+    padding: 0 5%;;
+    background: url(./imageHostpage/bg3.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+}
+
+//carousel 2
+
+.Carousel{
+    &__Container{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    }
+
+    &__Slide{
+    display: flex;
+    width: 100%;
+    height: 400px;    
+    }
+    &__Item{
+    width: 400px;
+    }
+    &__Image--Size{
+        width: 322px;
+        height: 200px;
+        border-radius: 10px;
+        background-size: cover;
+    }
+    &__Image--Url1{
+        background: url(./imageHostpage/hostCarousel1.webp) no-repeat center;
+    }
+    &__Image--Url2{
+        background: url(./imageHostpage/hostCarousel2.webp) no-repeat center;
+    }
+    &__Image--Url3{
+        background: url(./imageHostpage/hostCarousel3.webp) no-repeat center;
+    }
+    &__Image--Url4{
+        background: url(./imageHostpage/hostCarousel4.webp) no-repeat center;
+    }
+    &__Image--Url5{
+        background: url(./imageHostpage/hostCarousel5.webp) no-repeat center;
+    }
+    &__Image--Url6{
+        background: url(./imageHostpage/hostCarousel6.webp) no-repeat center;
+    }
+    &__Controls{
+      position: relative;
+      top: 25%;
+      left: -1%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+}
+//button previous
+#prevBtn{
+    cursor: pointer;
+    opacity: 0.7;
+    color:black;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 1px 1px #C1C1C1;
+}
+
+//button next
+#nextBtn{
+    cursor: pointer;
+    opacity: 0.5;
+    color:black;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 1px 1px #C1C1C1;
+}
+#prevBtn:hover, #nextBtn:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+//sign up board above the footer
+.SignUp{
+    padding: 5%;
+
+    &__Content{
+        p {
+            font-size: 18px;
+        }
+    }
+    small {
+        font-size: 0.9rem;
+    }
+    button {
+        background-color: black;
+    }
+    &__Input{
+        input:first-child {
+            border-bottom: none;     
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        input:nth-child(2) {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            top: -5%;
+        }
+    
+        &--Size{
+            display: block;
+            height: 70px;
+            border: 1px solid #969292;
+            border-radius: 10px;
+            outline: none;
+          
+        }
+        
+        input:focus {
+                border-radius: 10px;
+                border: 2px solid black;
+            
+    }
+    }
+}
+
+//Footer items
+.Footer{
+    &__Nav{
+        h6 {
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+        }
+        a {
+            color: #545151;
+            text-decoration-color: #a1a1a1;
+            font-size: 14px;
+            font-family:  sans-serif;
+        }
+    }
+    &__Tools{
+        ul > a {
+            color: #545151;
+            margin:0px 10px;
+            list-style-type: none;
+        }
+     
+    }
+    &__Language{
+        a{
+            color: #545151;
+            text-decoration: #545151 underline;
+            margin-right: 20px;
+        }
+    }
+    &__SocialMedia{
+        a {
+            margin-left: 20px;
+            color: #545151;
+            text-decoration: none;
+        }
+    }
+
+}
+//responsive header
+@media screen and (max-width: 768px){
+    .Header{
+        height: 80vh;   
+        &__Content{
+            h1{
+                font-size: 30px;
+            }
+        }
+      
+    }
+    .PopUp {
+        word-break: break-all;   
+        width: 100%;
+        z-index: 5;
+        p {
+            font-size: 13px;
+        }
+    }
+}
+ 
+
+//responsive carousel1
+@media screen and (max-width: 768px){
+    .Main{
+        &__Image{
+            &--Url1, &--Url2, &--Url3, &--Url4 {
+                height: 200px;
+                background-size: contain;
+                width: 100vw;
+            }
+        }
+        &__Content{
+            height: 230px;
+            width: 100vw;
+            h2{
+                text-align: left;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+//responesive footer
+@media screen and (max-width:768px ){
+    .Footer__Nav{
+        padding-top: 10px;
+        border-bottom: 1px solid #545151;
+    }
+}

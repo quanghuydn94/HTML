@@ -1,0 +1,460 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Logo--Size {
+  font-size: 40px;
+}
+
+.Heading_Font {
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Header {
+  background: url(./imageHostpage/bg.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Header__Content {
+  padding: 0  5%;
+}
+
+.Header__Content h1 {
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Header__Content select, .Header__Content input {
+  background: transparent;
+  color: white;
+  border: none;
+}
+
+.Header__Content option {
+  color: black;
+  font-size: 1rem;
+}
+
+.Header__Content--Animation {
+  -webkit-animation: content 2s;
+          animation: content 2s;
+  position: absolute;
+}
+
+.Header__Content--Color {
+  color: #F73967;
+}
+
+.Header__Button--Color {
+  font-size: 18px;
+  height: 60px;
+  width: 180px;
+  border: none;
+  background: -webkit-gradient(linear, left top, right top, from(#E61E4F), to(#D80765));
+  background: linear-gradient(90deg, #E61E4F, #D80765);
+  border-radius: 10px;
+}
+
+.Button__Position {
+  position: relative;
+  top: 40vh;
+}
+
+.Button__Position #Show {
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+}
+
+.PopUp {
+  position: absolute;
+  padding: 2%;
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: #FEFEFE;
+  z-index: 2;
+  opacity: 0.2;
+  display: none;
+  -webkit-animation: popUp 1s;
+          animation: popUp 1s;
+  -webkit-transition: 1s ease-out;
+  transition: 1s ease-out;
+}
+
+@-webkit-keyframes popUp {
+  from {
+    background-color: whie;
+    opacity: 0.2;
+  }
+  to {
+    background-color: #FEFEFE;
+    opacity: 1;
+  }
+}
+
+@keyframes popUp {
+  from {
+    background-color: whie;
+    opacity: 0.2;
+  }
+  to {
+    background-color: #FEFEFE;
+    opacity: 1;
+  }
+}
+
+.Container__PopUp {
+  display: none;
+  top: 0;
+  position: absolute;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.2;
+  background-color: #F7F7F7;
+  text-align: center;
+}
+
+@-webkit-keyframes content {
+  from {
+    padding-top: 40px;
+    opacity: 0.2;
+  }
+  to {
+    padding-top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes content {
+  from {
+    padding-top: 40px;
+    opacity: 0.2;
+  }
+  to {
+    padding-top: 0px;
+    opacity: 1;
+  }
+}
+
+.Main {
+  margin: 5% 0;
+  padding: 0 5%;
+}
+
+.Main__H2--Font {
+  font-size: 2.8rem;
+}
+
+.Main__H2--Font span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+
+.Main__Image--Url1, .Main__Image--Url2, .Main__Image--Url3, .Main__Image--Url4 {
+  background-size: cover;
+  background: no-repeat center;
+  height: 500px;
+  width: 50vw;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.Main__Image--Url1 {
+  background-image: url(./imageHostpage/Carousel1.jpg);
+}
+
+.Main__Image--Url2 {
+  background-image: url(./imageHostpage/Carousel2.jpg);
+}
+
+.Main__Image--Url3 {
+  background-image: url(./imageHostpage/Carousel3.jpg);
+}
+
+.Main__Image--Url4 {
+  background-image: url(./imageHostpage/Carousel4.jpg);
+}
+
+.Main__Content--Border {
+  width: 50vw;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #F7F7F7;
+}
+
+.Main__IconPrev--Size {
+  padding: 4px 6px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 1px 1px 1px #E7EAED;
+          box-shadow: 0px 1px 1px 1px #E7EAED;
+  position: absolute;
+  top: 45%;
+  left: -1%;
+}
+
+.Main__IconNext--Size {
+  padding: 4px 6px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 1px 2px 1px #E7EAED;
+          box-shadow: 0px 1px 2px 1px #E7EAED;
+  position: absolute;
+  top: 45%;
+  right: -1%;
+}
+
+.Main__IconLi li {
+  background-color: black;
+  padding: 2px 2.5px;
+  border-radius: 50%;
+  width: 2px;
+}
+
+.Main__IconLi {
+  bottom: -10%;
+}
+
+.Image--Background {
+  padding: 0 5%;
+  background: url(./imageHostpage/bg3.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+}
+
+.Carousel__Container {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.Carousel__Slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.Carousel__Item {
+  width: 400px;
+}
+
+.Carousel__Image--Size {
+  width: 322px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.Carousel__Image--Url1 {
+  background: url(./imageHostpage/hostCarousel1.webp) no-repeat center;
+}
+
+.Carousel__Image--Url2 {
+  background: url(./imageHostpage/hostCarousel2.webp) no-repeat center;
+}
+
+.Carousel__Image--Url3 {
+  background: url(./imageHostpage/hostCarousel3.webp) no-repeat center;
+}
+
+.Carousel__Image--Url4 {
+  background: url(./imageHostpage/hostCarousel4.webp) no-repeat center;
+}
+
+.Carousel__Image--Url5 {
+  background: url(./imageHostpage/hostCarousel5.webp) no-repeat center;
+}
+
+.Carousel__Image--Url6 {
+  background: url(./imageHostpage/hostCarousel6.webp) no-repeat center;
+}
+
+.Carousel__Controls {
+  position: relative;
+  top: 25%;
+  left: -1%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+#prevBtn {
+  cursor: pointer;
+  opacity: 0.7;
+  color: black;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 1px 1px #C1C1C1;
+          box-shadow: 0px 1px 1px 1px #C1C1C1;
+}
+
+#nextBtn {
+  cursor: pointer;
+  opacity: 0.5;
+  color: black;
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 1px 1px 1px #C1C1C1;
+          box-shadow: 0px 1px 1px 1px #C1C1C1;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  opacity: 1;
+  background-color: white;
+}
+
+.SignUp {
+  padding: 5%;
+}
+
+.SignUp__Content p {
+  font-size: 18px;
+}
+
+.SignUp small {
+  font-size: 0.9rem;
+}
+
+.SignUp button {
+  background-color: black;
+}
+
+.SignUp__Input input:first-child {
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.SignUp__Input input:nth-child(2) {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  top: -5%;
+}
+
+.SignUp__Input--Size {
+  display: block;
+  height: 70px;
+  border: 1px solid #969292;
+  border-radius: 10px;
+  outline: none;
+}
+
+.SignUp__Input input:focus {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.Footer__Nav h6 {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Footer__Nav a {
+  color: #545151;
+  -webkit-text-decoration-color: #a1a1a1;
+          text-decoration-color: #a1a1a1;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.Footer__Tools ul > a {
+  color: #545151;
+  margin: 0px 10px;
+  list-style-type: none;
+}
+
+.Footer__Language a {
+  color: #545151;
+  -webkit-text-decoration: #545151 underline;
+          text-decoration: #545151 underline;
+  margin-right: 20px;
+}
+
+.Footer__SocialMedia a {
+  margin-left: 20px;
+  color: #545151;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    height: 80vh;
+  }
+  .Header__Content h1 {
+    font-size: 30px;
+  }
+  .PopUp {
+    word-break: break-all;
+    width: 100%;
+    z-index: 5;
+  }
+  .PopUp p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Main__Image--Url1, .Main__Image--Url2, .Main__Image--Url3, .Main__Image--Url4 {
+    height: 200px;
+    background-size: contain;
+    width: 100vw;
+  }
+  .Main__Content {
+    height: 230px;
+    width: 100vw;
+  }
+  .Main__Content h2 {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Footer__Nav {
+    padding-top: 10px;
+    border-bottom: 1px solid #545151;
+  }
+}
+/*# sourceMappingURL=styleHost.css.map */
